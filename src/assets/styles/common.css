@@ -2,6 +2,8 @@
 
 :root {
   --lora-font: "Lora", serif;
+  --white-color: #fcfcfd;
+  --grey-color: #181a1b;
   --medium-font-weight: 500;
   --logo-color: #27292a;
   --z-fixed: 999;
@@ -9,9 +11,18 @@
 
 html{
   font-family: var(--lora-font);
+  font-weight: var(--medium-font-weight);
 }
 
 ul {
   list-style-image: initial;
   list-style: none;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:visited{
+  color:inherit;
 }

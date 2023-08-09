@@ -38,29 +38,30 @@
     margin: 0 auto;
 
     display: grid;
-    justify-content: center;
+    justify-content: space-around;
     grid-template-columns: repeat(3, max-content);
   }
 }
 
-.nav__item{
+.nav__item {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 0.25rem;
-  transition: color .3s;
+  transition: all 0.5s ease-in-out;
+  color: var(--grey-color);
 }
 
-@media screen and (min-width: 1023px){
-  .nav__item i{
-    display: none;
-    opacity: 0;
-    transition: opacity 0.5s ease-in;
-    transition-delay: 0.2s;
-  }
+.nav__item.active {
+  transform: scale(1.1);
+  color: black;
+}
+.nav__item i {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
 
-  .nav__item:hover i{
-    display: block;
-    opacity: 1;
-  }
+.nav__item:hover i,
+.nav__item.active i {
+  opacity: 1;
 }

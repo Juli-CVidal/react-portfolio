@@ -6,6 +6,7 @@ import NavItem, { NavItemProps } from "./NavItem";
 
 const Nav: React.FC = () => {
   const [links, setLinks] = useState<NavItemProps[]>([]);
+  const [lastClickedIndex, setLastClickedIndex] = useState<number>(0);
 
   useEffect(() => {
     const fetchLinks = async (): Promise<void> => {
@@ -31,11 +32,13 @@ const Nav: React.FC = () => {
         <div className="nav__menu" id="nav-menu">
             {links.map(({ href, text,icon_class }, index) => (
               <NavItem
-                key={index}
-                href={href}
-                text={text}
-                icon_class={icon_class}
-              />
+              key={index}
+              href={href}
+              text={text}
+              icon_class={icon_class}
+              isActive={index === lastClickedIndex}
+              onClick={() => setLastClickedIndex(index)}
+            />
             ))}
         </div>
       </nav>
