@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+
+:root {
+  --lora-font: "Lora", serif;
+  --medium-font-weight: 500;
+  --logo-color: #27292a;
+  --z-fixed: 999;
+}
+
+
+.grid{
+  display: grid;
+  gap:1.5rem;
+}
+
+
+ul{
+  list-style-image: initial;
+  list-style: none;
+}

@@ -1,0 +1,50 @@
+@import "./common.css";
+
+.header {
+  width: 100%;
+  position: fixed;
+  bottom: 2rem;
+  left: 0;
+  z-index: var(--z-fixed);
+}
+
+.nav {
+  height: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--body-color);
+  box-shadow: 0 4px 20px rgb(68, 91, 111, 0.1);
+  padding-inline: 1.5rem;
+  border-radius: 3rem;
+  transition: background 0.4s;
+}
+
+
+.nav__list{
+  grid-template-columns: repeat(3,max-content);
+}
+
+
+@media screen and (width > 1023px){
+  #header{
+    top: 0;
+    bottom: initial;
+  }
+
+  .nav{
+    width: initial;
+    height: 5rem;
+    box-shadow: none;
+    border-radius: 0;
+    column-gap: 3rem;
+    margin-inline: 1.5rem;
+    padding: 0;
+  }
+
+
+  .nav__list{
+    display: flex;
+    column-gap: 3rem;
+  }
+}
