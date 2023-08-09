@@ -29,7 +29,6 @@ const Nav: React.FC = () => {
         </a>
 
         <div className="nav__menu" id="nav-menu">
-          <ul className="nav__list grid">
             {links.map(({ href, text,icon_class }, index) => (
               <NavItem
                 key={index}
@@ -38,7 +37,6 @@ const Nav: React.FC = () => {
                 icon_class={icon_class}
               />
             ))}
-          </ul>
         </div>
       </nav>
     </header>

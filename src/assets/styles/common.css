@@ -7,14 +7,11 @@
   --z-fixed: 999;
 }
 
-
-.grid{
-  display: grid;
-  gap:1.5rem;
+html{
+  font-family: var(--lora-font);
 }
 
-
-ul{
+ul {
   list-style-image: initial;
   list-style: none;
 }

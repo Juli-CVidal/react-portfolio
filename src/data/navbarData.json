@@ -6,21 +6,9 @@
     "targetBlank": false
   },
   {
-    "href": "#skills",
-    "text": "Skills",
-    "icon_class": "ri-trophy-line",
-    "targetBlank": false
-  },
-  {
     "href": "#qualification",
     "text": "Qualification",
     "icon_class": "ri-book-open-line",
-    "targetBlank": false
-  },
-  {
-    "href": "#certifications",
-    "text": "Certifications",
-    "icon_class": "ri-bookmark-3-line",
     "targetBlank": false
   },
   {
@@ -28,12 +16,6 @@
     "text": "Projects",
     "icon_class": "ri-briefcase-line",
 
-    "targetBlank": false
-  },
-  {
-    "href": "#contact",
-    "text": "Contact",
-    "icon_class": "ri-chat-new-line",
     "targetBlank": false
   }
 ]
