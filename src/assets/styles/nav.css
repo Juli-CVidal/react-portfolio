@@ -26,6 +26,20 @@
     align-items: center;
   }
 }
+
+.nav__logo {
+  padding-top: 1rem;
+  font-size: 1.25rem;
+  color: var(--white);
+}
+
+.logo__lastname {
+  font-family: var(--cursive-font);
+  color: var(--imperial-red);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
 .nav__menu {
   display: flex;
   gap: 2rem;
@@ -34,8 +48,9 @@
   @media (max-width: 1023px) {
     position: fixed;
     width: 88%;
-    bottom: 2rem;
+    bottom: 1rem;
     margin: 0 auto;
+    padding: 0;
 
     display: grid;
     justify-content: space-around;
@@ -49,13 +64,19 @@
   align-items: center;
   row-gap: 0.25rem;
   transition: all 0.5s ease-in-out;
-  color: var(--grey-color);
+  padding: 0.25rem;
+}
+
+.nav__item:visited {
+  color: inherit;
 }
 
 .nav__item.active {
+  /* font-family: var(--cursive-font); */
   transform: scale(1.1);
-  color: black;
+  color: var(--white);
 }
+
 .nav__item i {
   opacity: 0;
   transition: opacity 0.5s ease-in-out;

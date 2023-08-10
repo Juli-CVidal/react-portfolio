@@ -24,9 +24,9 @@ const Nav: React.FC = () => {
 
   return (
     <header className="header" id="header">
-      <nav className="nav container">
+      <nav className="nav">
         <a href={links[0]?.href} className="nav__logo">
-          Julián Vidal
+          Julián<span className="logo__lastname">Vidal</span>
         </a>
 
         <div className="nav__menu" id="nav-menu">
