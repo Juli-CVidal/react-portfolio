@@ -1,0 +1,19 @@
+.text__container > div {
+  display: flex;
+}
+
+.text__slider {
+  overflow: hidden;
+  text-align: center;
+}
+
+.text__slide {
+  width: 100%;
+  padding-left: 0.5rem;
+  transition: all 0.5s;
+  display: none;
+}
+
+.text__slide.active {
+  display: block;
+}

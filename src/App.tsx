@@ -1,4 +1,4 @@
-import "./App.css";
+import HomeSection from "./components/HomeSection";
 import Nav from "./components/Nav";
 
 const App = () => {
@@ -6,6 +6,7 @@ const App = () => {
   return (
     <>
       <Nav />
+      <HomeSection/>
     </>
   );
 };

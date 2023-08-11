@@ -26,7 +26,7 @@ const Nav: React.FC = () => {
     <header className="header" id="header">
       <nav className="nav">
         <a href={links[0]?.href} className="nav__logo">
-          Julián<span className="logo__lastname">Vidal</span>
+          Julián<span className="highlight__cursive">Vidal</span>
         </a>
 
         <div className="nav__menu" id="nav-menu">

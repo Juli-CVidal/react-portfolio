@@ -1,0 +1,23 @@
+:root {
+  --image-width: 33%;
+}
+
+.hero {
+  padding-top: 2rem;
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+}
+
+.profile__picture {
+  width: var(--image-width);
+  border: 5px solid var(--timberwolf);
+}
+
+.text__container {
+    min-width: calc(100% - var(--image-width));
+  font-size: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
