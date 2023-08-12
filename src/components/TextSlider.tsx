@@ -1,20 +1,21 @@
 import "../assets/styles/text_slider.css";
 import { useState, useEffect } from "react";
 
-export type TextSliderProps = {
+type TextSliderProps = {
+  fontSize: string;
   speed: number;
   texts: string[];
 };
 
-const TextSlider = ({ speed, texts }: TextSliderProps) => {
+const TextSlider = ({ fontSize, speed, texts }: TextSliderProps) => {
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
 
   const animationSpeed = `${speed}ms`;
+
   useEffect(() => {
-    const length = texts.length;
     const interval = setInterval(() => {
       setCurrentTextIndex(
-        (currentTextIndex) => (currentTextIndex + 1) % length
+        (currentTextIndex) => (currentTextIndex + 1) % texts.length
       );
     }, speed);
 
@@ -28,7 +29,11 @@ const TextSlider = ({ speed, texts }: TextSliderProps) => {
       "--animation-speed",
       animationSpeed
     );
-  }, [animationSpeed]);
+    document.documentElement.style.setProperty(
+      "--slider-font-size",
+      fontSize
+    );
+  }, [animationSpeed, fontSize]);
 
   return (
     <div className="text__slider">

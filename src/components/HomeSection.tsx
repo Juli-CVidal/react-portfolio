@@ -15,7 +15,8 @@ const HomeSection = () => {
             Hi, I'm Julián<span className="highlight__cursive">Vidal</span>
           </h1>
 
-          <TextSlider speed={5000} texts={["FullStack Developer", "Quality Assurance"]}/>
+          <TextSlider fontSize="2rem" speed={5000}
+           texts={["FullStack Developer", "Quality Assurance"]}/>
         </div>
       </div>
     </section>
