@@ -1,19 +1,38 @@
-.text__container > div {
-  display: flex;
-}
-
 .text__slider {
+  position: relative;
+  height: 2rem;
+  /* background-color: var(--cornell-red-2); */
   overflow: hidden;
-  text-align: center;
+  text-wrap: nowrap;
 }
 
 .text__slide {
+  margin: 0;
+  font-size: 2rem;
   width: 100%;
-  padding-left: 0.5rem;
+  position: absolute;
+  top: -2rem;
   transition: all 0.5s;
-  display: none;
+  opacity: 0;
 }
 
 .text__slide.active {
-  display: block;
+  animation: slide var(--animation-speed) ease-in-out forwards;
+}
+
+@keyframes slide {
+  0% {
+    top: -2rem;
+    opacity: 0;
+  }
+  10%,
+  90% {
+    top: -25%;
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+    top: 2rem;
+  }
 }

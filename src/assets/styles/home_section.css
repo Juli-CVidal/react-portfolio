@@ -3,21 +3,20 @@
 }
 
 .hero {
-  padding-top: 2rem;
   display: flex;
   justify-content: space-around;
-  margin: auto;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .profile__picture {
   width: var(--image-width);
-  border: 5px solid var(--timberwolf);
+  border: none; 
+  overflow: hidden;
+  box-shadow: 11px 10px 26px -1px var(--night); 
 }
 
 .text__container {
-    min-width: calc(100% - var(--image-width));
-  font-size: 2rem;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
 }
